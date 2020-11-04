@@ -1,0 +1,19 @@
+.heading {
+  @apply text-4xl text-center text-gray-800 uppercase border-b-2 pb-4 border-gray-500 mb-4;
+}
+
+.blog_container {
+  @apply grid grid-cols-3 gap-4;
+}
+
+.blog_wrapper {
+  @apply shadow-md p-2 bg-purple-200;
+}
+
+.blog_title {
+  @apply bg-purple-300 text-purple-800 font-bold mb-2 p-2 capitalize;
+}
+
+.blog_text {
+  @apply capitalize p-2  text-gray-800 leading-7 text-justify;
+}

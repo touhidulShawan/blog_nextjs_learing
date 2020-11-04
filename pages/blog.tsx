@@ -1,4 +1,5 @@
 import { InferGetStaticPropsType } from "next";
+import Link from "next/link";
 import styles from "../styles/Blog.module.css";
 
 type Post = {
@@ -10,6 +11,9 @@ type Post = {
 const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="p-8 container mx-auto">
+      <Link href="/">
+        <a className="text-lg text-blue-600 font-bold uppercase">Home</a>
+      </Link>
       <h2 className={styles.heading}>Blogs</h2>
       <div className=" grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
         {posts.map(({ id, title, body }) => (

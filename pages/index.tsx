@@ -9,7 +9,9 @@ const Home = () => {
       <ProfileImage />
       <Bio />
       <Link href="/blog">
-        <a className="text-lg text-blue-500 font-bold">Blog</a>
+        <a className="text-lg text-blue-500 font-bold text-center block uppercase">
+          Blog
+        </a>
       </Link>
     </Layout>
   );

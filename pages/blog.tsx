@@ -11,9 +11,7 @@ const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="p-8 container mx-auto">
       <h2 className={styles.heading}>Blogs</h2>
-      <div
-        className={`${styles.blog_container} md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4`}
-      >
+      <div className=" grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4">
         {posts.map(({ id, title, body }) => (
           <div key={id} className={styles.blog_wrapper}>
             <h3 className={styles.blog_title}>{title}</h3>

@@ -2,10 +2,6 @@
   @apply text-4xl text-center text-gray-800 uppercase border-b-2 pb-4 border-gray-500 mb-4;
 }
 
-.blog_container {
-  @apply grid grid-cols-1;
-}
-
 .blog_wrapper {
   @apply shadow-md p-2 bg-purple-200;
 }

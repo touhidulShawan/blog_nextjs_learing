@@ -3,7 +3,7 @@
 }
 
 .blog_container {
-  @apply grid grid-cols-3 gap-4;
+  @apply grid grid-cols-1;
 }
 
 .blog_wrapper {
